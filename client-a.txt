@@ -1,4 +1,37 @@
 # Client Task A #
 # Add your pseudocode to this file below this line: #
-# ------------------------------------------------- #
+# include <stdio.h>
+include <stdlib.h>
+
+int main()
+{
+  const int Min = 1;
+  const int Max = 10;
+  int guess;    // to store user guess
+  int guesses;  // to keep track in guess
+  int answer;
+                // Uses the current time as a seed to generate random numbers.
+  Srand(time(0));
+                // Generate a random number between Min & Max
+  answer = (rand() %Max) + Min;
+
+  do{
+     printf("Enter a guess:");
+     scanf("%d, &guess);
+     if (guess > answer)
+       {
+        printf("too high! \n");
+        }
+      else if (guess < answer)
+        }
+        printf(" too low! \n");
+  else {
+        printf("correct !\n");
+        guesses ++;
+        } while (guess != answer)
+        printf("answer: %d", answer);
+        printf("guesses: %d" , guesses);
+
+return 0;
+----------------------------------------------- #
 
