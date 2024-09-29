@@ -1,4 +1,22 @@
 # Client Task B #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
-
+include <stdio.h>
+include < string.h>
+define Max_size
+100 // Maximum locations
+int size = 0; // current location
+The get function returns the location, or -1 if the location is not found.
+int Size = 0 // current number of location
+int index = getIndex (location);
+if(index == -1){ // location not found
+return -1;
+}
+else {           // key found
+return location [index];
+     }
+}               //function to print the location
+void printLocation()
+{
+for (int i = 0; i , size; i++)
+printf("%s:\n", size);
